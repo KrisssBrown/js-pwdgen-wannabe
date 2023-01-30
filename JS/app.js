@@ -1,3 +1,8 @@
+const titleElement = document.getElementById('js-response')
+
+
+
+
 let firstname;
 firstname= prompt('Inserisci il tuo nome!');
 console.log('la variabile nome è = ', firstname);
@@ -19,6 +24,10 @@ console.log ('la variabile numero è=', number);
 
 
 let weapon;
-weapon= prompt ('Inserisci la tua arma preferita! E perchè proprio il BARRET M107A1m?')
-console.log ('la variabile arma è=', weapon)
+weapon= prompt ('Inserisci la tua arma preferita! E perchè proprio il BARRET M107A1m?');
+console.log ('la variabile arma è=', weapon);
+
+
+titleElement.innerHTML = firstname + lastname + color + number + weapon
+console.log (titleElement)
 
